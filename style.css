@@ -1,7 +1,8 @@
 :root {
   --main-bg-color: #444444;
   --item-bg-color: #222222;
-  --accent-color: #8B1E3F;
+  /* --accent-color: #8B1E3F; */
+  --accent-color: #25901C;
   --text-color: #DDDDDD;
 }
 
@@ -56,7 +57,6 @@
 .about {
   height: 90vh;
   background: var(--main-bg-color);
-  border-bottom: 1px solid white;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -64,27 +64,26 @@
 
 .container {
   height: 100%;
-  width: 80%;
-  border: 1px dashed white;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  background-image: url("http://slovenia-incognita.com/wp-content/uploads/2016/03/rsz_shutterstock_196238024_bukev_bohinj.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.container img {
-  content: fill;
-  max-height: 300px;
-}
-
-.image {
-  width: 50%;
-}
-
-.content {
+.container p {
   background: var(--item-bg-color);
   color: var(--text-color);
-  width: 50%;
+  padding: 3vmin;
+}
+
+.accent {
+  color: var(--accent-color);
+  font-size: 3vmin;
 }
 
 .portfolio {
@@ -96,9 +95,12 @@
 }
 
 .portfolio h1 {
-  align-self: flex-start;
-  margin: 1.5vw;
+  align-self: flex-end;
+  width: 95%;
+  background: var(--item-bg-color);
+  padding: 1.5vmin;
   color: var(--text-color);
+  margin: 3vmin 0 1.5vmin 0;
 }
 
 .card {
@@ -113,14 +115,40 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2vmin;
+  width: 100%;
 }
 
-.card-text p {
+.card-description {
+  padding: 1.5vmin;
   color: var(--text-color);
 }
 
-.card-text a {
+.card-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.card-tech {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  color: var(--text-color);
+  font-size: 3vmin;
+  padding: 1vmin 3vmin;
+}
+
+.card-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-link a {
+  color: var(--text-color);
   text-decoration-color: var(--accent-color);
-  color: var(--text-color)
+  font-size: 3vmin;
+  padding: 1vmin 3vmin;
 }
