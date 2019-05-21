@@ -95,7 +95,7 @@
   flex-direction: column;
   align-items: center;
   background: var(--main-bg-color);
-  border-bottom: 1px solid white;
+  padding-bottom: 5vh;
   font-size: 2.4vmin;
 }
 
@@ -142,10 +142,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 50%;
   color: var(--text-color);
   font-size: 3vmin;
   padding: 1vmin 3vmin;
+}
+
+.extra {
+  font-size: 2vmin;
 }
 
 .card-link {
@@ -163,12 +166,24 @@
 
 .contact {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
-  height: 25vh;
+  height: 30vh;
+  background: var(--item-bg-color);
+  justify-content: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  /* background: var(--item-bg-color); */
+  justify-content: center;
 }
 
 .contact-info {
   display: flex;
   flex-direction: row;
+  color: var(--text-color);
+  padding: 1vh;
 }
