@@ -119,6 +119,12 @@
   margin: 10px;
 }
 
+.card img {
+  max-height: 150px;
+  width: 150px;
+  object-fit: 
+}
+
 .card-text {
   display: flex;
   flex-direction: column;
@@ -186,4 +192,10 @@
   flex-direction: row;
   color: var(--text-color);
   padding: 1vh;
+}
+
+.contact-info i, a {
+  color: var(--text-color);
+  text-decoration-color: var(--accent-color);
+  font-size: 2.5vmin;
 }
