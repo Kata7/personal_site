@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   font-family: Helvetica, sans-serif;
+  overflow: auto;
 }
 
 .navbar {
@@ -38,7 +39,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 1.5vw;
-  font-size: 2.4vh;
+  font-size: 2.4vmin;
 }
 
 .links a {
@@ -49,21 +50,21 @@
 }
 
 .links a:hover {
-  background: var(--text-color);
-  color: var(--item-bg-color);
+  background: var(--main-bg-color);
+  color: var(--text-color);
 }
 
 .highlight {
   border: 0.5vmin solid var(--accent-color);
 }
 
-.about {
+.splash {
   height: 90vh;
   background: var(--main-bg-color);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 2.4vh;
+  font-size: 2.4vmin;
 }
 
 .container {
@@ -90,16 +91,16 @@
   font-size: 3vmin;
 }
 
-.portfolio {
+.portfolio, .about {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: var(--main-bg-color);
-  padding-bottom: 5vh;
+  padding-bottom: 0vh;
   font-size: 2.4vmin;
 }
 
-.portfolio h1 {
+.section-header {
   align-self: flex-end;
   width: 95%;
   background: var(--item-bg-color);
@@ -116,12 +117,22 @@
   flex-direction: row;
   width: 80%;
   background: var(--item-bg-color);
-  margin: 10px;
+  margin: 2vmin;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background: var(--item-bg-color);
+  color: var(--text-color);
+  margin: 5vmin;
+  padding: 1.5vmin;
 }
 
 .card img {
-  max-height: 150px;
-  width: 150px;
+  max-height: 25vmin;
+  width: 25vmin;
   object-fit: cover;
 }
 
@@ -194,7 +205,7 @@
   padding: 1vh;
 }
 
-.contact-info i, a {
+.contact-info i, a, p {
   color: var(--text-color);
   text-decoration-color: var(--accent-color);
   font-size: 2.5vmin;
